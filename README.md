@@ -1,7 +1,7 @@
 # Spacestagram
 
-Shopify Challenge for Summer 2022 Front-End Development Intern
-Developed by Anson Tu
+- Shopify Challenge for Summer 2022 Front-End Development Intern
+- Developed by Anson Tu
 
 # Development
 
