@@ -23,7 +23,8 @@
 - All posts can be liked or unliked by clicking on the heart icon under the image/video, and the total number of likes is displayed on the left
 - Previously liked posts will keep their state even after the page is refreshed or closed, as liked posts are saved in local storage
 - The buttons for searching pictures will be disabled if an error has occurred, or the page is still loading a previous request
-  - Errors include choosing a date past the present date and having the start date after the end date
+  - Errors include choosing a date outside the bounds of the date boundaries (1995-06-16 to present date), and having the start date after the end date
+  - If there is an error with the date picker or date range picker, an error message will appear above it
 
 # Demo
 
