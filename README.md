@@ -26,7 +26,7 @@
 
 # Demo
 
-![](github_assets/spacestagram_demo.mp4)
+![](github_assets/spacestagram_demo.gif)
 
 # Home Screen
 
