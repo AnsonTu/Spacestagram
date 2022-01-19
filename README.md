@@ -24,6 +24,10 @@
 - The buttons for searching pictures will be disabled if an error has occurred, or the page is still loading a previous request
   - Errors include choosing a date past the present date and having the start date after the end date
 
+# Demo
+
+![](github_assets/spacestagram_demo.mp4)
+
 # Home Screen
 
 ![](github_assets/spacestagram_default_view.png)
