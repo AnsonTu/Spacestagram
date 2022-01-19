@@ -6,7 +6,8 @@ import { NasaPost } from "./components/interfaces";
 
 const NASA_API_KEY = process.env.REACT_APP_NASA_API_KEY;
 const PRESENT_DATE = new Date().toISOString().split("T")[0];
-const PLACEHOLDER_DATE = "2099-12-31";
+const OLDEST_DATE = "1995-06-16";
+const PLACEHOLDER_DATE = "2999-12-31";
 
 const App = () => {
   const [date, setDate] = useState<string>(PLACEHOLDER_DATE);
@@ -20,19 +21,29 @@ const App = () => {
 
   const onDateChange = (newDate: string) => {
     setDate(newDate);
-    newDate > PRESENT_DATE ? setDateError(true) : setDateError(false);
+    newDate > PRESENT_DATE || newDate < OLDEST_DATE
+      ? setDateError(true)
+      : setDateError(false);
   };
 
   const onStartDateChange = (newDate: string) => {
     setStartDate(newDate);
-    newDate > PRESENT_DATE || endDate > PRESENT_DATE || newDate > endDate
+    newDate > PRESENT_DATE ||
+    endDate > PRESENT_DATE ||
+    endDate < OLDEST_DATE ||
+    newDate < OLDEST_DATE ||
+    newDate > endDate
       ? setDateRangeError(true)
       : setDateRangeError(false);
   };
 
   const onEndDateChange = (newDate: string) => {
     setEndDate(newDate);
-    newDate > PRESENT_DATE || startDate > PRESENT_DATE || newDate < startDate
+    newDate > PRESENT_DATE ||
+    startDate > PRESENT_DATE ||
+    startDate < OLDEST_DATE ||
+    newDate < OLDEST_DATE ||
+    newDate < startDate
       ? setDateRangeError(true)
       : setDateRangeError(false);
   };
