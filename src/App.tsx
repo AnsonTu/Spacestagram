@@ -45,6 +45,7 @@ const App = () => {
       updatedPosts = [...likedPosts, post];
     }
     setLikedPosts(updatedPosts);
+    localStorage.setItem("likedPosts", JSON.stringify(updatedPosts));
   };
 
   const fetchPicturesWithDate = () => {
@@ -76,6 +77,9 @@ const App = () => {
       .then((data) => setPosts([data]))
       .then(() => setIsLoading(false))
       .catch((err) => console.error(err));
+
+    const localStorageLikedPosts = localStorage.getItem("likedPosts");
+    localStorageLikedPosts && setLikedPosts(JSON.parse(localStorageLikedPosts));
   }, []);
 
   return (
