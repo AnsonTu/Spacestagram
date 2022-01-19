@@ -30,7 +30,11 @@ const HeaderBar: React.FC<HeaderBarProps> = (props: HeaderBarProps) => {
   return (
     <Bar>
       <BarContent>
-        <HeaderLink target="_blank" href="https://github.com/AnsonTu">
+        <HeaderLink
+          target="_blank"
+          href="https://github.com/AnsonTu/Spacestagram"
+          rel="noopener noreferrer"
+        >
           Spacestagram <GitHubIcon />
         </HeaderLink>
       </BarContent>
