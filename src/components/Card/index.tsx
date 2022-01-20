@@ -12,7 +12,7 @@ interface CardProps {
 }
 
 const CardContainer = styled.div`
-  max-width: 540px;
+  max-width: 86%;
   margin: 12px 0;
   border: 1px solid #000000;
   border-radius: 4px;
@@ -24,7 +24,7 @@ const CardTitle = styled.h3`
 `;
 
 const CardImage = styled.img`
-  width: 540px;
+  width: 100%;
   height: 540px;
 `;
 

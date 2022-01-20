@@ -38,10 +38,14 @@
 
 ![](github_assets/spacestagram_loading.png)
 
+# Liked Post
+
+![](github_assets/spacestagram_liked_post.png)
+
 # Multiple Posts
 
 ![](github_assets/spacestagram_multiple_posts.png)
 
-# Liked Post
+# Mobile View
 
-![](github_assets/spacestagram_liked_post.png)
+![](github_assets/spacestagram_mobile_view.png)

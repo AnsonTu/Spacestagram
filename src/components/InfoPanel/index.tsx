@@ -17,13 +17,17 @@ interface InfoPanelProps {
 
 const PanelContainer = styled.div`
   position: fixed;
-  width: 480px;
-  height: 400px;
+  max-width: 480px;
+  height: 420px;
   margin-top: 36px;
-  margin-left: 144px;
+  margin-left: 5%;
   background-color: #eaf9f7;
   border: 2px solid #a9a9a9;
   border-radius: 16px;
+  @media (max-width: 768px) {
+    position: inherit;
+    margin-left: 0;
+  }
 `;
 
 const PanelHeader = styled.h2`

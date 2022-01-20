@@ -21,6 +21,9 @@ const ContentColumn = styled.div`
   float: left;
   width: 33%;
   padding-top: 72px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const PageContainer: React.FC<PageContainerProps> = (
