@@ -25,6 +25,7 @@
 - The buttons for searching pictures will be disabled if an error has occurred, or the page is still loading a previous request
   - Errors include choosing a date outside the bounds of the date boundaries (1995-06-16 to present date), and having the start date after the end date
   - If there is an error with the date picker or date range picker, an error message will appear above it
+- Application switches to single column layout when displayed on a screen size less than 768px in width
 
 # Demo
 

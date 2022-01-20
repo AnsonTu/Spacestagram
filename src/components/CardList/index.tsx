@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import Card from "../Card";
 import { NasaPost } from "../interfaces";
 
@@ -10,18 +9,13 @@ interface CardListProps {
   updateLikedPosts: (post: string, shouldRemove: boolean) => void;
 }
 
-const CardListContainer = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
 const CardList: React.FC<CardListProps> = (props: CardListProps) => {
   const { isLoading, posts, likedPosts, updateLikedPosts } = props;
 
   return isLoading ? (
     <h3>Loading...</h3>
   ) : (
-    <CardListContainer>
+    <div>
       {posts
         .slice(0)
         .reverse()
@@ -33,7 +27,7 @@ const CardList: React.FC<CardListProps> = (props: CardListProps) => {
             updateLikedPosts={updateLikedPosts}
           />
         ))}
-    </CardListContainer>
+    </div>
   );
 };
 

@@ -13,10 +13,13 @@ interface CardProps {
 
 const CardContainer = styled.div`
   max-width: 86%;
-  margin: 12px 0;
+  margin: 12px 0 12px 42px;
   border: 1px solid #000000;
   border-radius: 4px;
   background-color: #ffffff;
+  @media (max-width: 768px) {
+    margin: 12px auto;
+  }
 `;
 
 const CardTitle = styled.h3`
